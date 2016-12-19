@@ -1,0 +1,27 @@
+{
+  "name": "react-titlebar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "lint": "eslint src"
+  },
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^15.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "eslint": "^3.12.2",
+    "eslint-config-formidable": "^2.0.1",
+    "eslint-plugin-filenames": "^1.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.8.0"
+  }
+}

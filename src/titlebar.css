@@ -1,0 +1,128 @@
+.titlebar {
+  line-height: 0;
+  display: inline-block;
+}
+
+.titlebar__windows {
+  display: flex;
+  align-items: flex-end;
+}
+
+.titlebar__windows__minimize,
+.titlebar__windows__fullscreen,
+.titlebar__windows__close {
+  width: 46px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 125ms ease;
+  fill: currentColor;
+}
+
+.titlebar__windows__minimize:hover,
+.titlebar__windows__fullscreen:hover,
+.titlebar__windows__close:hover {
+  background-color: rgba(0,0,0,.1);
+}
+
+.titlebar__windows__close:hover {
+  background-color: rgba(232,17,35,1);
+  fill: #fff;
+}
+
+.titlebar__windows svg {
+  width: 10px;
+  height: 10px;
+}
+
+.titlebar__stoplight {
+  display: inline-flex;
+}
+
+.titlebar__stoplight svg {
+  fill: #000;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+}
+
+.titlebar__stoplight:hover .titlebar__fullscreen-svg {
+  opacity: .5;
+}
+
+.titlebar__stoplight:hover .titlebar__minimize-svg,
+.titlebar__stoplight:hover .titlebar__maximize-svg {
+  opacity: .5;
+}
+
+.titlebar__stoplight:hover .titlebar__close-svg {
+  opacity: .75;
+}
+
+.titlebar__stoplight__close,
+.titlebar__stoplight__minimize,
+.titlebar__stoplight__fullscreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 0 0 8px;
+  line-height: 0;
+  -webkit-app-region: no-drag;
+  -webkit-user-select: none;
+  user-select: none;
+  position: relative;
+}
+
+.titlebar__stoplight__minimize.titlebar__stoplight__minimize--disabled {
+  background-color: #d1d1d1;
+}
+
+.titlebar__stoplight__minimize.titlebar__stoplight__minimize--disabled svg {
+  display: none;
+}
+
+.titlebar__stoplight__close {
+  margin-left: 0;
+}
+
+.titlebar__stoplight__close:after,
+.titlebar__stoplight__minimize:after,
+.titlebar__stoplight__fullscreen:after {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  top: 0;
+  left: 0;
+  transform: scale(.92, .92);
+  box-shadow: 0 0 0 .5px rgba(0,0,0,.2);
+  border-radius: 50%;
+}
+
+.titlebar__stoplight__close {
+  background-color: #fc635d;
+}
+
+.titlebar__stoplight__close:active {
+  background-color: #bd4a46;
+}
+
+.titlebar__stoplight__minimize {
+  background-color: #fcbc41;
+}
+
+.titlebar__stoplight__minimize:active {
+  background-color: #be8e30;
+}
+
+.titlebar__stoplight__fullscreen {
+  background-color: #35cd4b;
+}
+
+.titlebar__stoplight__fullscreen:active {
+  background-color: #279a37;
+}
