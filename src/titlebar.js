@@ -34,6 +34,7 @@ export default class Titlebar extends Component {
 
   shouldComponentUpdate(nextProps, nextState) {
     return nextProps.isFullscreen !== this.props.isFullscreen ||
+           nextProps.isMaximized !== this.props.isMaximized ||
            nextState.altDown !== this.state.altDown;
   }
 
