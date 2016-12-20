@@ -2,7 +2,7 @@
   "name": "react-titlebar",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "lib/titlebar.js",
   "scripts": {
     "build": "babel src -d lib",
     "lint": "eslint src"
@@ -12,6 +12,10 @@
   "peerDependencies": {
     "react": "^15.4.1"
   },
+  "files": [
+    "lib",
+    "src"
+  ],
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-eslint": "^7.1.1",
