@@ -25,7 +25,7 @@
 .titlebar__windows__minimize:hover,
 .titlebar__windows__fullscreen:hover,
 .titlebar__windows__close:hover {
-  background-color: rgba(0,0,0,.1);
+  background-color: rgba(127,127,127,.1);
 }
 
 .titlebar__windows__close:hover {
