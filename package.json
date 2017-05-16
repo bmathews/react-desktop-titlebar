@@ -16,7 +16,11 @@
     "lib",
     "src"
   ],
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  },
   "devDependencies": {
+    "react": "^15.4.1",
     "babel-cli": "^6.18.0",
     "babel-eslint": "^7.1.1",
     "babel-plugin-transform-class-properties": "^6.19.0",

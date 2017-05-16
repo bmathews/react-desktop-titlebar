@@ -1,16 +1,17 @@
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
 const KEYCODE_ALT = 18;
 
 export default class Titlebar extends Component {
   static propTypes = {
-    isFullscreen: React.PropTypes.bool,
-    isMaximized: React.PropTypes.bool,
-    onClose: React.PropTypes.func,
-    onFullscreen: React.PropTypes.func,
-    onMaximize: React.PropTypes.func,
-    onMinimize: React.PropTypes.func,
-    platform: React.PropTypes.oneOf(['win32', 'darwin'])
+    isFullscreen: PropTypes.bool,
+    isMaximized: PropTypes.bool,
+    onClose: PropTypes.func,
+    onFullscreen: PropTypes.func,
+    onMaximize: PropTypes.func,
+    onMinimize: PropTypes.func,
+    platform: PropTypes.oneOf(['win32', 'darwin'])
   }
 
   static defaultProps = {
